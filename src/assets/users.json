@@ -1,0 +1,38 @@
+[
+    { "SNO":"1",
+      "username": "john",
+      "password": "1234",
+      "email":"john@gmail.com"
+    },
+    { "SNO":"2",
+      "username": "alice",
+      "password": "abcd",
+      "email":"alice@gmail.com"
+    },
+    {  "SNO":"3",
+        "username": "Arun",
+        "password": "xyz@",
+        "email":"Arun@gmail.com"
+      },
+      { "SNO":"4",
+        "username": "Vishal",
+        "password": "kvbs2",
+        "email":"vishal@gmail.com"
+      },
+      { "SNO":"5",
+        "username": "Sudheer",
+        "password": "puppy",
+        "email":"sudheer@gmail.com"
+      },
+      { "SNO":"6",
+        "username": "Spandana",
+        "password": "sweety",
+        "email":"saispandana@gmail.com"
+      },
+      { "SNO":"7",
+        "username": "Harika",
+        "password": "Hari123",
+        "email":"Harikathati@gmail.com"
+      }
+  ]
+  

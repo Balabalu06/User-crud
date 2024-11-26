@@ -1,0 +1,43 @@
+<div class="container">
+<h2>{{ isEditing ? 'Edit User' : 'Add New User' }}</h2>
+  <form (ngSubmit)="addUser()">
+    <div class="mb-3">
+      <label>Name</label>
+      <input type="text" class="form-control" [(ngModel)]="newUser.username" name="name" />
+    </div>
+    <div class="mb-3">
+      <label>Email</label>
+      <input type="email" class="form-control" [(ngModel)]="newUser.email" name="email" />
+    </div>
+    <div class="mb-3">
+      <label>Password</label>
+      <input type="password" class="form-control" [(ngModel)]="newUser.password" name="password" />
+    </div>
+    <button type="submit" class="btn btn-success">Add</button>
+  </form>
+
+  <h3 class="mt-4">Users List</h3>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.password }}</td>
+        <td>
+         <span> <button class="btn btn-primary btn-sm" (click)="editUser(i)">Edit</button></span>
+          <span><button class="btn btn-danger btn-sm" (click)="deleteUser(i)">Delete</button></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
